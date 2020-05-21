@@ -1,0 +1,22 @@
+version: '3'
+services: 
+  jupyter:
+    container_name: jupyter
+    build: 
+      context: jupyter
+    ports: 
+      - "8888:8888"
+    networks: 
+      - demonet
+
+  mssql:
+    container_name: mssql
+    build: 
+      context: mssql
+    ports:
+      - "1433:1433"
+    networks: 
+      - demonet
+
+networks: 
+  demonet:
