@@ -4,5 +4,7 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"python.dataScience.jupyterServerURI": "http://127.0.0.1:8888/?token=a04fd7fc1485f0cea47520bfbae091fa3456ffafe6e26670"
+	}
 }

@@ -7,3 +7,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends unixodbc &&\
 COPY odbc.ini /etc/odbc.ini
 COPY odbcinst.ini /etc/odbcinst.ini
 USER jovyan
+RUN pip install mssql-cli
